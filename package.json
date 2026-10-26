@@ -13,11 +13,13 @@
     "format:check": "prettier --check --ignore-path=.gitignore ."
   },
   "dependencies": {
+    "@solar-icons/react": "^2.3.3",
     "framer-motion": "^9.1.7",
     "react-hook-form": "^7.91.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.6.1",
+    "daisyui": "^5.7.50",
     "eslint-config-prettier": "^8.10.2",
     "husky": "^7.0.4",
     "lint-staged": "^17.6.0",

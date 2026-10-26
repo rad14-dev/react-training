@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@solar-icons/react":
+        specifier: ^2.3.3
+        version: 2.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       framer-motion:
         specifier: ^9.1.7
         version: 9.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -17,6 +20,9 @@ importers:
       autoprefixer:
         specifier: ^10.6.1
         version: 10.6.1(postcss@8.5.31)
+      daisyui:
+        specifier: ^5.7.50
+        version: 5.7.50
       eslint-config-prettier:
         specifier: ^8.10.2
         version: 8.10.2(eslint@10.13.0(jiti@1.21.7)(supports-color@7.2.0))
@@ -215,6 +221,16 @@ packages:
       }
     engines: { node: ">= 8" }
 
+  "@solar-icons/react@2.3.3":
+    resolution:
+      {
+        integrity: sha512-ysV8O4SitjscEnfsuHehHwkQFPZYKk6A9+Zooqw9SmG80n4V/R0ciTkwABHZ3VTlCRtkqQgaDZHkczkujhtcag==,
+      }
+    engines: { node: ">=16" }
+    peerDependencies:
+      react: ">= 16.8"
+      react-dom: ">= 16.8"
+
   "@types/esrecurse@4.3.1":
     resolution:
       {
@@ -375,6 +391,12 @@ packages:
       }
     engines: { node: ">=4" }
     hasBin: true
+
+  daisyui@5.7.50:
+    resolution:
+      {
+        integrity: sha512-+/LRqnTCoc7s/bJEKKwtJSwzeXCVdAmRdNmZeZzgHCaQ9PJyl7j+2V2U32GQDMyD+VDkP9e/+JGoC72Y1hLk7w==,
+      }
 
   debug@4.4.3:
     resolution:
@@ -1377,6 +1399,11 @@ snapshots:
       "@nodelib/fs.scandir": 2.1.5
       fastq: 1.20.3
 
+  "@solar-icons/react@2.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)":
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   "@types/esrecurse@4.3.1": {}
 
   "@types/estree@1.0.9": {}
@@ -1469,6 +1496,8 @@ snapshots:
       which: 2.0.2
 
   cssesc@3.0.0: {}
+
+  daisyui@5.7.50: {}
 
   debug@4.4.3(supports-color@7.2.0):
     dependencies:
