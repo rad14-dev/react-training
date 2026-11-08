@@ -4,6 +4,7 @@ import React from "react";
 //component import
 import ImgCard from "../components/ImgCard";
 import CardMod from "../components/CardMod";
+import Slider from "../components/Slider";
 
 export default function ReviewPage() {
   return (
@@ -12,7 +13,8 @@ export default function ReviewPage() {
       <h1 className="text-2xl font-bold text-center">Review Komponen</h1>
       {/*Container Component*/}
       <div className="flex flex-col items-center gap-6 w-full max-w-md">
-        <CardMod title="Sepatu" description="Sepatu yang Buat anda nyaman" />
+        <Slider slot1="Audio" slot2="Lightness" />
+        {/*<CardMod title="Sepatu" description="Sepatu yang Buat anda nyaman" />*/}
         {/*<ImgCard
           imageSrc= "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
           title= "Nike"

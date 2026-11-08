@@ -26,21 +26,21 @@ export default function Card({ title, description }: CardProps) {
           <h1>{title}</h1>
           <p>{description}</p>
         </div>
-        <div className="quantitymod flex items-center w-24 px-4 ">
+        <fieldset className="join m-2  bg-white rounded-full w-3.5">
           <button
             onClick={handleDecrement}
-            className="cursor-pointer border-npne bg-transparent p-0"
+            className="btn btn-ghost rounded-s-full"
           >
             <MinusIcon size={24} className="text-black" />
           </button>
           <p className="quantity">{quantity}</p>
           <button
             onClick={handleIncrement}
-            className="cursor-pointer border-npne bg-transparent p-0"
+            className="btn btn-ghost rounded-e-full"
           >
             <AddIcon size={24} className="text-black" />
           </button>
-        </div>
+        </fieldset>
       </div>
     </div>
   );
