@@ -17,13 +17,13 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
     <div className="card card-lg w-96 bg-base-100 shadow-sm p-8 gap-4 rounded-3xl">
       <div className="flex flex-col">
         <h3 className="card-title">{slot1}</h3>
-        <div className="flex items-center gap-1">
+        <div className="flex shrink-0 items-center gap-1">
           <VolumeLoudIcon
             size={36}
             color="#c36f19"
             secondaryColor="#6086fa"
             secondaryOpacity={0.6}
-          />{" "}
+          />
           {/*Icon Sound*/}
           <input
             type="range"
@@ -33,7 +33,9 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
             className="range range-primary"
             onChange={(e) => setVolume(Number(e.target.value))}
           />
-          <p className="text-base-content controltext">{volume}</p>
+          <p className="text-base-content controltext w-12 text-right">
+            {volume}
+          </p>
         </div>
         <div className="flex items-center gap-2 mt-4">
           <MicrophoneIcon
@@ -51,18 +53,20 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
             className="range range-primary"
             onChange={(e) => setMicrophone(Number(e.target.value))}
           />
-          <p className="text-base-content controltext">{microphone}</p>
+          <p className="text-base-content controltext w-12 text-right text-current">
+            {microphone}
+          </p>
         </div>
       </div>
 
-      <h3 className="card-title"> {slot2} </h3>
-      <div className="flex gap-2">
+      <h3 className="card-title">{slot2}</h3>
+      <div className="flex gap-2 items-center">
         <LightbulbBoltIcon
           size={36}
           color="#c36f19"
           secondaryColor="#6086fa"
           secondaryOpacity={0.6}
-        />
+        />{" "}
         {/*Icon lampu*/}
         <input
           type="range"
@@ -72,7 +76,9 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
           className="range range-primary"
           onChange={(e) => setBrightness(Number(e.target.value))}
         />
-        <p className="text-base-content controltext">{brightness}</p>
+        <p className="text-base-content controltext w-12 text-right">
+          {brightness}
+        </p>
       </div>
     </div>
   );
