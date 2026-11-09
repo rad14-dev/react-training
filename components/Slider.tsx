@@ -33,6 +33,7 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
             className="range range-primary"
             onChange={(e) => setVolume(Number(e.target.value))}
           />
+          <p className="text-base-content controltext">{volume}</p>
         </div>
         <div className="flex items-center gap-2 mt-4">
           <MicrophoneIcon
@@ -50,17 +51,18 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
             className="range range-primary"
             onChange={(e) => setMicrophone(Number(e.target.value))}
           />
+          <p className="text-base-content controltext">{microphone}</p>
         </div>
       </div>
 
-      <h3 className="card-title">{slot2}</h3>
+      <h3 className="card-title"> {slot2} </h3>
       <div className="flex gap-2">
         <LightbulbBoltIcon
           size={36}
           color="#c36f19"
           secondaryColor="#6086fa"
           secondaryOpacity={0.6}
-        />{" "}
+        />
         {/*Icon lampu*/}
         <input
           type="range"
@@ -70,6 +72,7 @@ export default function Slider({ slot1, slot2 }: SliderProps) {
           className="range range-primary"
           onChange={(e) => setBrightness(Number(e.target.value))}
         />
+        <p className="text-base-content controltext">{brightness}</p>
       </div>
     </div>
   );
